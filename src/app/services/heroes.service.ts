@@ -24,14 +24,14 @@ export class HeroesService {
           bio: "Al haber perdido la vista, los cuatro sentidos restantes de Daredevil fueron aumentados por la radiación a niveles superhumanos, en el accidente que tuvo cuando era niño. A pesar de su ceguera, puede \"ver\" a través de un \"sexto sentido\" que le sirve como un radar similar al de los murciélagos.",
           img: "assets/img/daredevil.png",
           aparicion: "1964-01-01",
-          casa: "Marvel"
+          casa: "MARVEL"
         },
         {
           nombre: "Hulk",
           bio: "Su principal poder es su capacidad de aumentar su fuerza hasta niveles prácticamente ilimitados a la vez que aumenta su furia. Dependiendo de qué personalidad de Hulk esté al mando en ese momento (el Hulk Banner es el más débil, pero lo compensa con su inteligencia).",
           img: "assets/img/hulk.png",
           aparicion: "1962-05-01",
-          casa:"Marvel"
+          casa:"MARVEL"
         },
         {
           nombre: "Linterna Verde",
@@ -45,14 +45,14 @@ export class HeroesService {
           bio: "Tras ser mordido por una araña radiactiva, obtuvo los siguientes poderes sobrehumanos, una gran fuerza, agilidad, poder trepar por paredes. La fuerza de Spider-Man le permite levantar 10 toneladas o más. Gracias a esta gran fuerza Spider-Man puede realizar saltos íncreibles. Un \"sentido arácnido\", que le permite saber si un peligro se cierne sobre él, antes de que suceda. En ocasiones este puede llevar a Spider-Man al origen del peligro.",
           img: "assets/img/spiderman.png",
           aparicion: "1962-08-01",
-          casa: "Marvel"
+          casa: "MARVEL"
         },
         {
           nombre: "Wolverine",
           bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
           img: "assets/img/wolverine.png",
           aparicion: "1974-11-01",
-          casa: "Marvel"
+          casa: "MARVEL"
         }
       ];
 
@@ -63,6 +63,11 @@ export class HeroesService {
 
     getHeroes():Heroe[]{
         return this.heroes;
+    }
+
+    getHeroe(idx:string){
+      return this.heroes[idx];
+
     }
 
 }
